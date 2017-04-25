@@ -2,12 +2,6 @@
 #include <stdlib.h>
 #include "funciones.h"
 
-int suma(int A,int B);
-int resta(int A,int B);
-int divicion(int A,int B);
-int multiplicacion(int A,int B);
-int factorial(int );
-
 
 
 int main()
@@ -15,7 +9,6 @@ int main()
     char seguir='s';
     int opcion=0;
     float x,y,z,valor,result;
-
 
     while(seguir=='s')
     {
@@ -96,41 +89,10 @@ int main()
 
         }
 
-
     return 0;
 }
 
-int suma(int A,int B){
-    int total;
-    total=A+B;
-    return total;
 
-}
-int resta(int A,int B){
-    int total;
-    total=A-B;
-    return total;
-
-}
-int divicion(int A,int B){
-    int total;
-    total=A/B;
-    return total;
-
-}
-int multiplicacion(int A,int B){
-    int total;
-    total=A*B;
-    return total;
-}
-int factorial(int A){
-    int resp;
-    if(A==1)
-        return 1;
-    resp=A* factorial(A-1);
-    return(resp);
-
-}
 
 
 
